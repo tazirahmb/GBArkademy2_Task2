@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {
   StyleSheet,
-  Image,
   View,
-  TouchableWithoutFeedback} from 'react-native';
+  TouchableWithoutFeedback,
+  Image,
+  ScrollView} from 'react-native';
 import {
   Container,
   Header,
@@ -16,6 +17,8 @@ import {
   Right,
   Icon
 } from 'native-base';
+import { Col, Row, Grid } from 'react-native-easy-grid';
+import Carousel from 'react-native-carousel';
 
 const colorData = {
   white: '#FFFFFF',
@@ -27,6 +30,21 @@ const colorData = {
 
 export default class App extends Component {
 
+  // splashComponent = {
+  //   splashText = [
+  //     'Share your professional profile',
+  //     'Build relationships to unlock opportunity',
+  //     'Stay informed on topics, industries and people you care about',
+  //     'A more personal way to find jobs'
+  //   ],
+  //   spashImage = [
+  //     './images/splash1.jpg',
+  //     './images/splash2.jpg',
+  //     './images/splash3.jpg',
+  //     './images/splash4.jpg'
+  //   ]
+  // }
+
   render() {
     return (
       <Container style={styles.container}>
@@ -36,25 +54,55 @@ export default class App extends Component {
             source={require('./images/logo.png')}
           />
         </Header>
-        <Content contentContainerStyle={styles.content}>
-            <View styles={styles.splashImage}>
-              <Text style={{color: colorData.white}}>test</Text>
-            </View>
-            <View styles={styles.tombolTombol}>
-              <Button large iconLeft block light>
-                <Icon name='logo-google' />
-                <Text style={{color: colorData.lightBlue}}>JOIN WITH GOOGLE</Text>
+        <Grid style={{margin: 10}}>
+          <Row size={3} style={{paddingTop: 10}}>
+            <Carousel
+
+              indicatorAtBottom={true}
+              delay={3000}
+              indicatorOffset={0}
+              indicatorColor='#FFFFFF'
+              indicatorSize={30}
+              inactiveIndicatorColor='#AAA'
+              indicatorSpace={15}
+              animate={false}
+            >
+                <Col style={styles.carouselChild}>
+                  <Text style={{color: colorData.white, textAlign:'center'}}>Share your professional profile</Text>
+                  <Image source={require('./images/splash1.jpg')}/>
+                </Col>
+                <Col style={styles.carouselChild}>
+                  <Text style={{color: colorData.white, textAlign:'center'}}>Build relationships to unlock opportunity</Text>
+                  <Image source={require('./images/splash2.jpg')}/>
+                </Col>
+                <Col style={styles.carouselChild}>
+                  <Text style={{color: colorData.white, textAlign:'center'}}>Stay informed on topics, industries and people you care about</Text>
+                  <Image source={require('./images/splash3.jpg')}/>
+                </Col>
+                <Col style={styles.carouselChild}>
+                  <Text style={{color: colorData.white, textAlign:'center'}}>A more personal way to find jobs</Text>
+                  <Image source={require('./images/splash4.jpg')}/>
+                </Col>
+            </Carousel>
+              
+          </Row>
+          <Row size={1}>
+            <Col style={styles.tombolTombol}>
+              <Button iconLeft block light>
+                <Icon style={{color: colorData.lightBlue}} name='logo-google' />
+                <Text style={[styles.buttonText, {color: colorData.lightBlue}]}>JOIN WITH GOOGLE</Text>
               </Button>
-              <Button large block bordered light>
-                <Text>JOIN NOW</Text>
+              <Button block bordered light>
+                <Text style={styles.buttonText}>JOIN NOW</Text>
               </Button>
-              <TouchableWithoutFeedback>
-                <Text style={{color: colorData.white}}>Already have an account? 
-                  <Text style={{color: colorData.lightBlue}}> Sign In</Text>
+            <TouchableWithoutFeedback>
+                <Text style={{color: '#AAAAAA', fontSize: 11}}>Already have an account? 
+                  <Text style={{color: colorData.lightBlue, fontSize: 11}}> Sign In</Text>
                 </Text>
-              </TouchableWithoutFeedback>
-            </View>
-        </Content>
+            </TouchableWithoutFeedback>
+            </Col>            
+          </Row>
+        </Grid>
         {/* <Footer /> */}
       </Container>
     )
@@ -68,6 +116,14 @@ const styles = StyleSheet.create({
   Header: {
     backgroundColor: colorData.splashHeader,
     height: 45
+  },
+  carouselChild: {
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  splashImage: {
+    scaleX: 1.5,
+    scaleY: 1.5
   },
   logo: {
       alignSelf: 'center',
@@ -83,9 +139,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'yellow'
   },
   tombolTombol: {
-    flex: 1,
-    margin: 10,
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: 'space-around',
+    alignItems: 'center',
+
+  },
+  buttonText: {
+    fontSize: 20
   }
 })
