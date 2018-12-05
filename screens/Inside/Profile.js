@@ -21,8 +21,9 @@ import {
 import {Grid, Row, Col} from 'react-native-easy-grid';
 import {Image} from 'react-native';
 import {ColorStyles} from '../../styles/Styles';
-import {Education, Experience} from '../../Components/ArrayData';
+import {Education, Experience, Contact} from '../../Components/ArrayData';
 import CardListThreeLines from '../../Components/CardListThreeLines';
+import CardListTwoLines from '../../Components/CardListTwoLines';
 
 export default class Profile extends Component {
     render() {
@@ -114,27 +115,10 @@ export default class Profile extends Component {
                         variabelData={Education}
                     />
                     
-                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 16}}>
-                        <CardItem Header style={{borderBottomColor: '#EEE', borderBottomWidth: 1}}>
-                            <Left>
-                                <Text>Contact</Text>
-                            </Left>
-                            <Right>
-                                <Icon name='create' />
-                            </Right>
-                        </CardItem>
-                        <CardItem cardBody>
-                            <List>
-                                <ListItem thumbnail style={{padding: 8}}>
-                                    <Thumbnail small square source={require('../../images/profpic.jpg')} />
-                                    <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
-                                        <Text>Your Profile</Text>
-                                        <Text note>https://www.linkedin.com/in/tazirahmb</Text>
-                                    </View>
-                                </ListItem>
-                            </List>
-                        </CardItem>
-                    </Card>
+                    <CardListTwoLines 
+                        CategoryName='Contact'
+                        variabelData={Contact}
+                    />
                 </Content>
             </Container>
         )

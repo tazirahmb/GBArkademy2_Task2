@@ -15,6 +15,8 @@ import {
     Container,
     List,
     Thumbnail} from 'native-base';
+import { Messages } from '../../Components/ArrayData';
+import ListTwoLines from '../../Components/ListTwoLines';
 
 export default class Messaging extends Component {
     render() {
@@ -34,15 +36,9 @@ export default class Messaging extends Component {
                             <Icon name='setting'/>
                         </Item>
                     </Header>
-                    <List>
-                        <ListItem Thumbnail>
-                            <Thumbnail source={require('../../images/profile_bg.jpg')} />
-                                <View  style={{flexDirection: 'column'}}>
-                                    <Text>Politeknik Negeri Jakarta</Text>
-                                    <Text note>D4 Teknik Multimedia dan Jaringan</Text>
-                                </View>
-                        </ListItem>
-                    </List>
+                    <ListTwoLines
+                        variabelData={Messages}
+                    />
                 </Content>
             </Container>
         )

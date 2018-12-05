@@ -36,7 +36,15 @@ const Experience = [
         YearStart: 'Oct 2017',
         YearEnd: 'Oct 2018',
         Time: '1 yr'
-    }
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'PT. Badr Interactive',
+        Title: 'Intern UI/UX Designer',
+        YearStart: 'May 2017',
+        YearEnd: 'Sep 2017',
+        Time: '5 mo'
+    },
 ]
 
 const Education = [
@@ -47,7 +55,51 @@ const Education = [
         YearStart: '2014',
         YearEnd: '2018',
         Time: '4 yrs'
-    }
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'MA Darul Marhamah',
+        Title: 'IPA',
+        YearStart: '2010',
+        YearEnd: '2013',
+        Time: '3 yrs'
+    },
+]
+
+const Contact = [
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Title: 'Your LinkedIn',
+        Content: 'www.linkedin.com/tazirahmb'
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Title: 'Email',
+        Content: 'tazirahmb@outlook.com'
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Title: 'Phone Number',
+        Content: '(+62) 816-889-880'
+    },
+]
+
+const Messages = [
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Title: 'Angdini Dea',
+        Content: 'Halo Tazirah, selamat datang di Arkademy'
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Title: 'Isgi Arriza',
+        Content: '- Task 2 Grand Bootcamp -'
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Title: 'Rizka Aristiyanti',
+        Content: 'Zir, cara install unity di android gimana sih?'
+    },
 ]
 
 const splashComponent = [
@@ -61,5 +113,7 @@ export {
     statusFeed,
     splashComponent,
     Education,
-    Experience
+    Experience,
+    Contact,
+    Messages
 };

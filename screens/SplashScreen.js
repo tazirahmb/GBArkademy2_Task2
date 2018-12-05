@@ -29,7 +29,6 @@ export default class SplashScreen extends Component {
         <Grid style={{margin: 10}}>
           <Row size={3} style={{paddingTop: 10}}>
             <Carousel
-
               indicatorAtBottom={true}
               delay={3000}
               indicatorOffset={0}
