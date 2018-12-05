@@ -15,9 +15,12 @@ import {
     CardItem,
     ListItem,
     List,
-    H1
+    H1,
+    H2
 } from 'native-base';
+import {Grid, Row, Col} from 'react-native-easy-grid';
 import {Image} from 'react-native';
+import {ColorStyles} from '../../styles/Styles';
 
 export default class Profile extends Component {
     render() {
@@ -41,7 +44,7 @@ export default class Profile extends Component {
                                     <H1 style={{paddingTop: 40}}>Ta'zirah Marwan</H1>
                                     <Text>Learner at Grand Bootcamp</Text>
                                     <Text note>Arkademy</Text>
-                                    <Text note>South Tangerang, Indonesia • 0 <Icon note name='people' /></Text>
+                                    <Text note>South Tangerang, Indonesia • 0 <Icon name='people' style={{fontSize: 18, color: '#737373'}} /></Text>
                                 </Body>
                             </CardItem>
                             </Card>
@@ -56,28 +59,74 @@ export default class Profile extends Component {
                             borderColor: 'white',
                         }} large source={require('../../images/profpic.jpg')} />
                     </View>
-                    <View style={{backgroundColor: '#344A57', padding: 10, marginTop: 10}}>
+                    <View style={{backgroundColor: '#344A57', padding: 10, marginVertical: 10}}>
                         <Text style={{color: 'white'}}>Your Dashboard</Text>
-                        <Text note style={{color: 'white'}}>Private to you</Text>
-                        <Card>
-                            <CardItem>
-                                <Left>
-                                    <Text>0</Text>
-                                    <Text>Who viewed your profile</Text>
-                                </Left>
-                                <Body>
-                                    <Text>0</Text>
-                                    <Text>Post views</Text>
-                                </Body>
-                                <Right>
-                                    <Text>0</Text>
-                                    <Text>Search Appearance</Text>
-                                </Right>
-                            </CardItem>
+                        <Text note style={{color: 'white', fontSize: 12}}>Private to you</Text>
+                        <Card style={{padding: 10}}>
+                            <Grid>
+                                <Col>
+                                    <Left>
+                                    <Row>
+                                        <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
+                                    </Row>
+                                    <Row>
+                                        <Text note style={{color: '#000'}}>Who viewed your profile</Text>
+                                    </Row>
+                                    </Left>
+                                </Col>
+                                <Col>
+                                    <Left>
+                                        
+                                    <Row>
+                                        <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
+                                    </Row>
+                                    <Row style={{alignItems: "flex-start"}}>
+                                        <Text note style={{color: '#000'}}>Post views</Text>
+                                    </Row>
+                                    </Left>
+                                </Col>
+                                <Col>
+                                    <Left>
+
+                                    <Row>
+                                        <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
+                                    </Row>
+                                    <Row>
+                                        <Text note style={{color: '#000'}}>Search Appearance</Text>
+                                    </Row>
+                                    </Left>
+                                </Col>
+                            </Grid>
                         </Card>
                     </View>
-                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 8}}>
-                        <CardItem Header>
+                    
+                    {/** work */}
+                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 16}}>
+                        <CardItem Header style={{borderBottomColor: '#EEE', borderBottomWidth: 1}}>
+                            <Left>
+                                <Text>Experience</Text>
+                            </Left>
+                            <Right>
+                                <Icon name='create' />
+                            </Right>
+                        </CardItem>
+                        <CardItem cardBody>
+                            <List>
+                                <ListItem Thumbnail>
+                                    <Thumbnail square source={require('../../images/profile_bg.jpg')} />
+                                    <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
+                                        <Text>PT. Reston Bisnis Solusi</Text>
+                                        <Text note>Freelance UI/UX Designer</Text>
+                                        <Text note>Oct 2017 - Oct 2018 • 1 yr</Text>
+                                    </View>
+                                </ListItem>
+                            </List>
+                        </CardItem>
+                    </Card>
+                    
+                    {/** edu */}
+                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 16}}>
+                        <CardItem Header style={{borderBottomColor: '#EEE', borderBottomWidth: 1}}>
                             <Left>
                                 <Text>Education</Text>
                             </Left>
@@ -89,7 +138,7 @@ export default class Profile extends Component {
                             <List>
                                 <ListItem Thumbnail>
                                     <Thumbnail square source={require('../../images/profile_bg.jpg')} />
-                                    <View  style={{flexDirection: 'column'}}>
+                                    <View style={{flexDirection: 'column', marginHorizontal: 8}}>
                                         <Text>Politeknik Negeri Jakarta</Text>
                                         <Text note>D4 Teknik Multimedia dan Jaringan</Text>
                                         <Text note>2014 - 2018</Text>
@@ -97,12 +146,9 @@ export default class Profile extends Component {
                                 </ListItem>
                             </List>
                         </CardItem>
-                        <CardItem Footer>
-                            {/** tombol */}
-                        </CardItem>
                     </Card>
-                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 8}}>
-                        <CardItem Header>
+                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 16}}>
+                        <CardItem Header style={{borderBottomColor: '#EEE', borderBottomWidth: 1}}>
                             <Left>
                                 <Text>Contact</Text>
                             </Left>
@@ -112,11 +158,11 @@ export default class Profile extends Component {
                         </CardItem>
                         <CardItem cardBody>
                             <List>
-                                <ListItem thumbnail>
+                                <ListItem thumbnail style={{padding: 8}}>
                                     <Thumbnail small square source={require('../../images/profpic.jpg')} />
-                                    <View  style={{flexDirection: 'column'}}>
+                                    <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
                                         <Text>Your Profile</Text>
-                                        <Text style={{borderBottomColor: '#AAA', borderBottomWidth: 1}}>https://www.linkedin.com/in/tazirahmb</Text>
+                                        <Text note>https://www.linkedin.com/in/tazirahmb</Text>
                                     </View>
                                 </ListItem>
                             </List>
