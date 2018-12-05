@@ -14,7 +14,15 @@ class StatusCard extends Component {
 
     render() {
         
-        const {ProfPic, Name, Follower, DatePosted, StatusContent, Likes, Comments} = this.props;
+        const {
+            ProfPic,
+            Name,
+            Follower,
+            DatePosted,
+            StatusContent,
+            Likes,
+            Comments
+        } = this.props;
 
         return(
             <Card>

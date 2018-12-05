@@ -21,6 +21,8 @@ import {
 import {Grid, Row, Col} from 'react-native-easy-grid';
 import {Image} from 'react-native';
 import {ColorStyles} from '../../styles/Styles';
+import {Education, Experience} from '../../Components/ArrayData';
+import CardListThreeLines from '../../Components/CardListThreeLines';
 
 export default class Profile extends Component {
     render() {
@@ -101,52 +103,17 @@ export default class Profile extends Component {
                     </View>
                     
                     {/** work */}
-                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 16}}>
-                        <CardItem Header style={{borderBottomColor: '#EEE', borderBottomWidth: 1}}>
-                            <Left>
-                                <Text>Experience</Text>
-                            </Left>
-                            <Right>
-                                <Icon name='create' />
-                            </Right>
-                        </CardItem>
-                        <CardItem cardBody>
-                            <List>
-                                <ListItem Thumbnail>
-                                    <Thumbnail square source={require('../../images/profile_bg.jpg')} />
-                                    <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
-                                        <Text>PT. Reston Bisnis Solusi</Text>
-                                        <Text note>Freelance UI/UX Designer</Text>
-                                        <Text note>Oct 2017 - Oct 2018 • 1 yr</Text>
-                                    </View>
-                                </ListItem>
-                            </List>
-                        </CardItem>
-                    </Card>
+                    <CardListThreeLines
+                        CategoryName='Experience'
+                        variabelData={Experience}
+                    />
                     
-                    {/** edu */}
-                    <Card style={{marginLeft: 16, marginTop: 8, marginRight: 16}}>
-                        <CardItem Header style={{borderBottomColor: '#EEE', borderBottomWidth: 1}}>
-                            <Left>
-                                <Text>Education</Text>
-                            </Left>
-                            <Right>
-                                <Icon name='create' />
-                            </Right>
-                        </CardItem>
-                        <CardItem cardBody>
-                            <List>
-                                <ListItem Thumbnail>
-                                    <Thumbnail square source={require('../../images/profile_bg.jpg')} />
-                                    <View style={{flexDirection: 'column', marginHorizontal: 8}}>
-                                        <Text>Politeknik Negeri Jakarta</Text>
-                                        <Text note>D4 Teknik Multimedia dan Jaringan</Text>
-                                        <Text note>2014 - 2018</Text>
-                                    </View>
-                                </ListItem>
-                            </List>
-                        </CardItem>
-                    </Card>
+                    {/** work */}
+                    <CardListThreeLines
+                        CategoryName='Education'
+                        variabelData={Education}
+                    />
+                    
                     <Card style={{marginLeft: 16, marginTop: 8, marginRight: 16}}>
                         <CardItem Header style={{borderBottomColor: '#EEE', borderBottomWidth: 1}}>
                             <Left>
