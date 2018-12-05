@@ -12,38 +12,17 @@ import {
 } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import Carousel from 'react-native-carousel';
-
-const colorData = {
-  white: '#FFFFFF',
-  splashHeader: '#283E4B',
-  splashBackground: '#344A57',
-  statusBarColor: '#016098',
-  lightBlue: '#1A8FC5'
-}
+import {splashComponent} from '../Components/ArrayData';
+import {Styles, ColorStyles} from '../styles/Styles';
 
 export default class SplashScreen extends Component {
 
-  // splashComponent = {
-  //   splashText = [
-  //     'Share your professional profile',
-  //     'Build relationships to unlock opportunity',
-  //     'Stay informed on topics, industries and people you care about',
-  //     'A more personal way to find jobs'
-  //   ],
-  //   spashImage = [
-  //     '../images/splash1.jpg',
-  //     '../images/splash2.jpg',
-  //     '../images/splash3.jpg',
-  //     '../images/splash4.jpg'
-  //   ]
-  // }
-
   render() {
     return (
-      <Container style={styles.container}>
-        <Header noShadow style={styles.Header} androidStatusBarColor={colorData.statusBarColor}>
+      <Container style={Styles.container}>
+        <Header noShadow style={Styles.Header} androidStatusBarColor={ColorStyles.statusBarColor}>
           <Image
-            style={styles.logo}
+            style={Styles.logo}
             source={require('../images/logo.png')}
           />
         </Header>
@@ -60,39 +39,29 @@ export default class SplashScreen extends Component {
               indicatorSpace={15}
               animate={false}
             >
-                <Col style={styles.carouselChild}>
-                  <Text style={{color: colorData.white, textAlign:'center'}}>Share your professional profile</Text>
-                  <Image source={require('../images/splash1.jpg')}/>
-                </Col>
-                <Col style={styles.carouselChild}>
-                  <Text style={{color: colorData.white, textAlign:'center'}}>Build relationships to unlock opportunity</Text>
-                  <Image source={require('../images/splash2.jpg')}/>
-                </Col>
-                <Col style={styles.carouselChild}>
-                  <Text style={{color: colorData.white, textAlign:'center'}}>Stay informed on topics, industries and people you care about</Text>
-                  <Image source={require('../images/splash3.jpg')}/>
-                </Col>
-                <Col style={styles.carouselChild}>
-                  <Text style={{color: colorData.white, textAlign:'center'}}>A more personal way to find jobs</Text>
-                  <Image source={require('../images/splash4.jpg')}/>
-                </Col>
+            {splashComponent.map((data, key) => 
+              <Col style={Styles.carouselChild}>
+                <Text style={{color: ColorStyles.white, textAlign:'center'}}>{data.text}</Text>
+                <Image source={data.Image}/>
+              </Col>
+            )}
             </Carousel>
               
           </Row>
           <Row size={1}>
-            <Col style={styles.tombolTombol}>
-              <Button iconLeft block light>
-                <Icon style={{color: colorData.lightBlue}} name='logo-google' />
-                <Text style={[styles.buttonText, {color: colorData.lightBlue}]}>JOIN WITH GOOGLE</Text>
+            <Col style={Styles.tombolTombol}>
+              <Button iconLeft block light onPress={() => this.props.navigation.navigate('TabScreen')}>
+                <Icon style={{color: ColorStyles.lightBlue}} name='logo-google' />
+                <Text style={[Styles.buttonText, {color: ColorStyles.lightBlue}]}>JOIN WITH GOOGLE</Text>
               </Button>
-              <Button block bordered light>
-                <Text style={styles.buttonText}>JOIN NOW</Text>
+              <Button block bordered light onPress={() => this.props.navigation.navigate('TabScreen')}>
+                <Text style={Styles.buttonText}>JOIN NOW</Text>
               </Button>
             <TouchableWithoutFeedback
                 onPress={() => this.props.navigation.navigate('Sign_In')}
             >
                 <Text style={{color: '#AAAAAA', fontSize: 11}}>Already have an account? 
-                  <Text style={{color: colorData.lightBlue, fontSize: 11}}> Sign In</Text>
+                  <Text style={{color: ColorStyles.lightBlue, fontSize: 11}}> Sign In</Text>
                 </Text>
             </TouchableWithoutFeedback>
             </Col>            
@@ -103,42 +72,3 @@ export default class SplashScreen extends Component {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colorData.splashBackground
-  },
-  Header: {
-    backgroundColor: colorData.splashHeader,
-    height: 45
-  },
-  carouselChild: {
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  splashImage: {
-    scaleX: 1.5,
-    scaleY: 1.5
-  },
-  logo: {
-      alignSelf: 'center',
-      scaleX: 0.75,
-      scaleY: 0.75
-  },
-  content: {
-    flex: 1,
-    justifyContent: 'center'
-  },
-  splashImage: {
-    flex: 1,
-    backgroundColor: 'yellow'
-  },
-  tombolTombol: {
-    justifyContent: 'space-around',
-    alignItems: 'center',
-
-  },
-  buttonText: {
-    fontSize: 20
-  }
-})
