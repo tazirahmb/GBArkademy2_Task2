@@ -11,7 +11,7 @@ import {
     Thumbnail,
     View
 } from 'native-base';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 class CardListThreeLines extends Component {
     
@@ -31,8 +31,8 @@ class CardListThreeLines extends Component {
                 </CardItem>
                 <CardItem cardBody>
                     <List>
-                        {variabelData.map((data, key) =>
-                        <ListItem Thumbnail>
+                        {variabelData.map((data) =>
+                        <ListItem key={data.toString()} Thumbnail>
                             <Thumbnail square source={data.Thumbnail} />
                             <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
                                 <Text>{data.Name}</Text>
@@ -48,9 +48,9 @@ class CardListThreeLines extends Component {
     }
 }
 
-CardListThreeLines.PropTypes = {
-    CategoryName: PropTypes.string.isRequired,
-    variabelData: PropTypes.array.isRequired
+CardListThreeLines.propTypes = {
+    CategoryName: propTypes.string.isRequired,
+    variabelData: propTypes.array.isRequired
 }
 
 export default CardListThreeLines;

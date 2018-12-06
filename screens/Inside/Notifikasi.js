@@ -1,26 +1,30 @@
 import React, {Component} from 'react';
 import {
-    Text,
-    View,
     Content,
     Container,
     Header,
     Left,
-    Body,
     Right,
     Icon,
     Input,
     List,
-    ListItem,
     Thumbnail,
     Item,
-    Button} from 'native-base';
+    } from 'native-base';
+import { notification } from '../../Components/ArrayData';
+import NotificationList from '../../Components/NotificationList';
+import {Styles, ColorStyles} from '../../styles/Styles';
 
 export default class Notifikasi extends Component {
     render() {
         return(
-            <Container>
-                <Header searchBar noShadow androidStatusBarColor='#016098'>
+            <Container style={Styles.container}>
+                <Header
+                    searchBar
+                    noShadow
+                    style={Styles.Header}
+                    androidStatusBarColor={ColorStyles.statusBarColor}
+                >
                     <Left>
                         <Thumbnail small source={require('../../images/splash1.jpg')} />
                     </Left>
@@ -34,21 +38,15 @@ export default class Notifikasi extends Component {
                     </Right>
                 </Header>
                 <Content>
-                    <List>
-                        <ListItem thumbnail>
-                            <Left>
-                            <Thumbnail source={require('../../images/profpic.jpg')}/>
-
-                            </Left>
-                            <Body>
-
-                            <Text>Kamin menemukan pekerjaan yang mungkin anda minati</Text>
-                            <Button bordered>
-                                <Text>LIHAT PERKERJAAN</Text>
-                            </Button>
-                            </Body>
-                            <Right />
-                        </ListItem>
+                    <List style={{backgroundColor: 'white'}}>
+                        {notification.map((data) =>
+                            <NotificationList 
+                                key={data.toString()}
+                                thumbnail={data.Thumbnail}
+                                Content={data.Text}
+                                ButtonText={data.Button}
+                            />    
+                        )}
                     </List>
                 </Content>
             </Container>

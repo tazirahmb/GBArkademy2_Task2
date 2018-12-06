@@ -13,23 +13,25 @@ import {
     Thumbnail,
     Card,
     CardItem,
-    ListItem,
-    List,
     H1,
     H2
 } from 'native-base';
 import {Grid, Row, Col} from 'react-native-easy-grid';
 import {Image} from 'react-native';
-import {ColorStyles} from '../../styles/Styles';
 import {Education, Experience, Contact} from '../../Components/ArrayData';
 import CardListThreeLines from '../../Components/CardListThreeLines';
 import CardListTwoLines from '../../Components/CardListTwoLines';
+import {Styles, ColorStyles} from '../../styles/Styles';
 
 export default class Profile extends Component {
     render() {
         return(
-            <Container>
-                <Header>
+            <Container style={Styles.container}>
+                <Header
+                    noShadow
+                    style={Styles.Header}
+                    androidStatusBarColor={ColorStyles.statusBarColor}
+                >
                     <Left>
                         <Icon name='person' style={{color: 'white'}}/>
                     </Left>
@@ -41,47 +43,42 @@ export default class Profile extends Component {
                 <Content>
                     <Image style={{position: "absolute"}} source={require('../../images/profile_bg.jpg')} />
                     <View>
-                        <Card style={{marginTop: 100, marginLeft: 10, marginRight: 10}}>
+                        <Card style={Styles.profileDescCard}>
                             <CardItem>
                                 <Body  style={{alignItems: 'center'}}>
                                     <H1 style={{paddingTop: 40}}>Ta'zirah Marwan</H1>
                                     <Text>Learner at Grand Bootcamp</Text>
                                     <Text note>Arkademy</Text>
-                                    <Text note>South Tangerang, Indonesia • 0 <Icon name='people' style={{fontSize: 18, color: '#737373'}} /></Text>
+                                    <Text note>South Tangerang, Indonesia • 0 <Icon name='people' style={Styles.icon} /></Text>
                                 </Body>
                             </CardItem>
                             </Card>
-                        <Thumbnail style={{
-                            alignSelf: 'center',
-                            elevation: 5,
-                            scaleX: 1.5,
-                            scaleY: 1.5,
-                            top: 48,
-                            position: 'absolute',
-                            borderWidth: 3,
-                            borderColor: 'white',
-                        }} large source={require('../../images/profpic.jpg')} />
+                        <Thumbnail
+                            large
+                            style={Styles.profilePicture}
+                            source={require('../../images/profpic.jpg')} 
+                        />
                     </View>
-                    <View style={{backgroundColor: '#344A57', padding: 10, marginVertical: 10}}>
+                    <View style={Styles.dashboardContainer}>
                         <Text style={{color: 'white'}}>Your Dashboard</Text>
-                        <Text note style={{color: 'white', fontSize: 12}}>Private to you</Text>
+                        <Text style={{color: 'white', fontSize: 12}}>Private to you</Text>
                         <Card style={{padding: 10}}>
                             <Grid>
                                 <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
                                     
-                                        <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
-                                        <Text note style={{color: '#000'}}>Who viewed your profile</Text>
+                                        <H2 style={Styles.LinkText}>0</H2>
+                                        <Text note style={{color: 'black'}}>Who viewed your profile</Text>
                                     
                                 </Col>
                                 <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
                                         
-                                        <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
-                                        <Text note style={{color: '#000'}}>Post views</Text>
+                                        <H2 style={Styles.LinkText}>0</H2>
+                                        <Text note style={{color: 'black'}}>Post views</Text>
                                     
                                 </Col>
                                 <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
-                                        <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
-                                        <Text note style={{color: '#000'}}>Search Appearance</Text>
+                                        <H2 style={Styles.LinkText}>0</H2>
+                                        <Text note style={{color: 'black'}}>Search Appearance</Text>
                                     
                                 </Col>
                             </Grid>

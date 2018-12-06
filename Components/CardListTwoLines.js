@@ -7,7 +7,7 @@ import {
     Text,
     Icon
 } from 'native-base';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import ListTwoLines from './ListTwoLines';
 
 class CardListTwoLines extends Component {
@@ -36,9 +36,9 @@ class CardListTwoLines extends Component {
     }
 }
 
-CardListTwoLines.PropTypes = {
-    CategoryName: PropTypes.string.isRequired,
-    variabelData: PropTypes.array.isRequired
+CardListTwoLines.propTypes = {
+    CategoryName: propTypes.string.isRequired,
+    variabelData: propTypes.array.isRequired
 }
 
 export default CardListTwoLines;

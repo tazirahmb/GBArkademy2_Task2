@@ -14,6 +14,8 @@
     "react-native-carousel": "^0.11.0",
     "react-native-gesture-handler": "^1.0.10",
     "react-native-linear-gradient": "^2.5.2",
+    "react-native-svg": "^8.0.8",
+    "react-native-svg-uri": "^1.2.3",
     "react-navigation": "^3.0.4"
   },
   "devDependencies": {
@@ -24,5 +26,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./styles/Source Sans Pro/"
+    ]
   }
 }

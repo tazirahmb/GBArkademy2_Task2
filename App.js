@@ -21,7 +21,7 @@ const RootStack = createStackNavigator(
   {
     initialRouteName: 'Splash',
     defaultNavigationOptions: {
-      header: null
+      header: null,
     }
   }
 );

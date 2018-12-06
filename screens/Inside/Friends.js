@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 import {
     Text,
-    View,
     Icon,
     Header,
     Container,
     Left,
     Body,
     Right,
-    Button,
     Input,
     Item,
     Thumbnail,
@@ -16,15 +14,20 @@ import {
     CardItem,
     Card} from 'native-base';
 import {Grid, Row, Col} from 'react-native-easy-grid';
-import {ColorStyles} from '../../styles/Styles';
 import FriendCardList from '../../Components/FriendCardList';
 import {friendRecommendation} from '../../Components/ArrayData';
+import {Styles, ColorStyles} from '../../styles/Styles';
 
 export default class Friends extends Component {
     render() {
         return(
-            <Container>
-                <Header searchBar noShadow androidStatusBarColor='#016098'>
+            <Container style={Styles.container}>
+                <Header
+                    searchBar
+                    noShadow
+                    style={Styles.Header}
+                    androidStatusBarColor={ColorStyles.statusBarColor}
+                >
                     <Left>
                         <Thumbnail small source={require('../../images/splash1.jpg')} />
                     </Left>
@@ -63,7 +66,7 @@ export default class Friends extends Component {
                                     <Text>No pending invitation</Text>
                                 </Body>
                                 <Right>
-                                    <Text style={{color: ColorStyles.lightBlue}}>MANAGE ALL</Text>
+                                    <Text style={Styles.LinkText}>MANAGE ALL</Text>
                                 </Right>
                             </CardItem>
                         </Card>

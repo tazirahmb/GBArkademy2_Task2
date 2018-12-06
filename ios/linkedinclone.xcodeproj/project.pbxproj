@@ -53,6 +53,32 @@
 		55A7796614934DEFA0C02619 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 587048D592FE403AA55DA0E3 /* Zocial.ttf */; };
 		2B973FECAA894E6CA83F1D9A /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C23303A6B8048C69D8AF575 /* libRNGestureHandler.a */; };
 		D2081A627B674103B9610C85 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3EABD25DF7473F89737064 /* libBVLinearGradient.a */; };
+		5AF81AD7B9FC4180BC3A7B71 /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E88EB463D02A4624863A175D /* SourceSansPro-Black.otf */; };
+		25ABF5C3B8594DF5AE8AB02A /* SourceSansPro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5889CD9FD4FF42F4877E7BDA /* SourceSansPro-BlackIt.otf */; };
+		9415F54DCA90447CA936D5F9 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BACC7C1420F84B8F95561173 /* SourceSansPro-Bold.otf */; };
+		EC96F06EDED14EA69C396550 /* SourceSansPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = B52D9DCC0FFA4EFAB4C4FB55 /* SourceSansPro-BoldIt.otf */; };
+		64832C293DED42A6AEDDBFB6 /* SourceSansPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8C18DF70B9442D1BDC14A5D /* SourceSansPro-ExtraLight.otf */; };
+		938DF5E3C5CE4147AD4B1993 /* SourceSansPro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F0794DC41904665911E3B4A /* SourceSansPro-ExtraLightIt.otf */; };
+		9C9B0CE840D742E2B75F9180 /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F49D8D9F7BE49259087C38F /* SourceSansPro-It.otf */; };
+		54411D3E90924D41845F8E66 /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C66045E831DC400482D5BDA0 /* SourceSansPro-Light.otf */; };
+		50B1EEE0FA154519A40C2393 /* SourceSansPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = A93362A406FF437381E46601 /* SourceSansPro-LightIt.otf */; };
+		C201F45E4D6B4D768E1B5B1A /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC679E586B3443819A82C2B1 /* SourceSansPro-Regular.otf */; };
+		B25179ABC4A64292BCDBA134 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E929362038474C78963E1ACB /* SourceSansPro-Semibold.otf */; };
+		A181BBD46B3D4C14ABC5E768 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6A231D799FC04CF69C117FEC /* SourceSansPro-SemiboldIt.otf */; };
+		81FAAD27105F4933AE9787B1 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CD169E05834CEFA0B1F602 /* libRNSVG.a */; };
+		C61EFD67EAF644968156E343 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F32316DBEE41E7B8E39935 /* libRNSVG-tvOS.a */; };
+		6EF9433EE452426F8C77052C /* SourceSansPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 160A3916C97F40D1A08F5F8B /* SourceSansPro-Black.ttf */; };
+		7FD9AFABB5254E48BE83DD56 /* SourceSansPro-BlackIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 794060018AF84A159910F886 /* SourceSansPro-BlackIt.ttf */; };
+		DD3A0AB0F98D4DFAAF34FD9E /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB2FCFC96D764D79B646F402 /* SourceSansPro-Bold.ttf */; };
+		EA667CC549D8470389D0A275 /* SourceSansPro-BoldIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE395180C0AD470E85AFA98E /* SourceSansPro-BoldIt.ttf */; };
+		CC65337471974E71BCEB8033 /* SourceSansPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9085E38480DA4F319C271B03 /* SourceSansPro-ExtraLight.ttf */; };
+		D33016E3C132486DBB359219 /* SourceSansPro-ExtraLightIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A42560E594D4ECD83274E15 /* SourceSansPro-ExtraLightIt.ttf */; };
+		65FCB42E6BEC402899E3652E /* SourceSansPro-It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376147ECBF9F4BDAA15EEA96 /* SourceSansPro-It.ttf */; };
+		68DFF5877F6940998C8EDEA7 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF719B1BD4434A8AE56768 /* SourceSansPro-Light.ttf */; };
+		500AE6D4E3C5458F9DE13CCA /* SourceSansPro-LightIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9EDD2E8E49C0495EB64801F5 /* SourceSansPro-LightIt.ttf */; };
+		C120B38F3B4F4EBAAC32E92E /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89A1C0F68512478EBCF4AEB8 /* SourceSansPro-Regular.ttf */; };
+		FC9FC43C6E064EFC9B0ADF77 /* SourceSansPro-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D64B87AEF214B2DA5CEEA47 /* SourceSansPro-Semibold.ttf */; };
+		09D134B1DDA6450DB9CDD4EA /* SourceSansPro-SemiboldIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C90CDB40C9F41C8974C0661 /* SourceSansPro-SemiboldIt.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -376,6 +402,33 @@
 		1C23303A6B8048C69D8AF575 /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		DF511FF388A84A1BA8ABEDD2 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; name = "BVLinearGradient.xcodeproj"; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		8D3EABD25DF7473F89737064 /* libBVLinearGradient.a */ = {isa = PBXFileReference; name = "libBVLinearGradient.a"; path = "libBVLinearGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		E88EB463D02A4624863A175D /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; name = "SourceSansPro-Black.otf"; path = "../styles/SourceSansPro/SourceSansPro-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5889CD9FD4FF42F4877E7BDA /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; name = "SourceSansPro-BlackIt.otf"; path = "../styles/SourceSansPro/SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BACC7C1420F84B8F95561173 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; name = "SourceSansPro-Bold.otf"; path = "../styles/SourceSansPro/SourceSansPro-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B52D9DCC0FFA4EFAB4C4FB55 /* SourceSansPro-BoldIt.otf */ = {isa = PBXFileReference; name = "SourceSansPro-BoldIt.otf"; path = "../styles/SourceSansPro/SourceSansPro-BoldIt.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C8C18DF70B9442D1BDC14A5D /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; name = "SourceSansPro-ExtraLight.otf"; path = "../styles/SourceSansPro/SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3F0794DC41904665911E3B4A /* SourceSansPro-ExtraLightIt.otf */ = {isa = PBXFileReference; name = "SourceSansPro-ExtraLightIt.otf"; path = "../styles/SourceSansPro/SourceSansPro-ExtraLightIt.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F49D8D9F7BE49259087C38F /* SourceSansPro-It.otf */ = {isa = PBXFileReference; name = "SourceSansPro-It.otf"; path = "../styles/SourceSansPro/SourceSansPro-It.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C66045E831DC400482D5BDA0 /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; name = "SourceSansPro-Light.otf"; path = "../styles/SourceSansPro/SourceSansPro-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A93362A406FF437381E46601 /* SourceSansPro-LightIt.otf */ = {isa = PBXFileReference; name = "SourceSansPro-LightIt.otf"; path = "../styles/SourceSansPro/SourceSansPro-LightIt.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC679E586B3443819A82C2B1 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; name = "SourceSansPro-Regular.otf"; path = "../styles/SourceSansPro/SourceSansPro-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E929362038474C78963E1ACB /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; name = "SourceSansPro-Semibold.otf"; path = "../styles/SourceSansPro/SourceSansPro-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6A231D799FC04CF69C117FEC /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; name = "SourceSansPro-SemiboldIt.otf"; path = "../styles/SourceSansPro/SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AA8DFC20364E43DC9B5BF774 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		A7CD169E05834CEFA0B1F602 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		F1F32316DBEE41E7B8E39935 /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		160A3916C97F40D1A08F5F8B /* SourceSansPro-Black.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-Black.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		794060018AF84A159910F886 /* SourceSansPro-BlackIt.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-BlackIt.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-BlackIt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB2FCFC96D764D79B646F402 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-Bold.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BE395180C0AD470E85AFA98E /* SourceSansPro-BoldIt.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-BoldIt.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-BoldIt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9085E38480DA4F319C271B03 /* SourceSansPro-ExtraLight.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-ExtraLight.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A42560E594D4ECD83274E15 /* SourceSansPro-ExtraLightIt.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-ExtraLightIt.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-ExtraLightIt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		376147ECBF9F4BDAA15EEA96 /* SourceSansPro-It.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-It.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-It.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FDF719B1BD4434A8AE56768 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-Light.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9EDD2E8E49C0495EB64801F5 /* SourceSansPro-LightIt.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-LightIt.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-LightIt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		89A1C0F68512478EBCF4AEB8 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-Regular.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5D64B87AEF214B2DA5CEEA47 /* SourceSansPro-Semibold.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-Semibold.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4C90CDB40C9F41C8974C0661 /* SourceSansPro-SemiboldIt.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-SemiboldIt.ttf"; path = "../styles/Source Sans Pro/SourceSansPro-SemiboldIt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,6 +458,7 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				2B973FECAA894E6CA83F1D9A /* libRNGestureHandler.a in Frameworks */,
 				D2081A627B674103B9610C85 /* libBVLinearGradient.a in Frameworks */,
+				81FAAD27105F4933AE9787B1 /* libRNSVG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +474,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				C61EFD67EAF644968156E343 /* libRNSVG-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +648,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				CC6556A6BB6B40E1B0E03DF5 /* RNGestureHandler.xcodeproj */,
 				DF511FF388A84A1BA8ABEDD2 /* BVLinearGradient.xcodeproj */,
+				AA8DFC20364E43DC9B5BF774 /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -658,6 +714,30 @@
 				052E74A6233F48D480F0114E /* rubicon-icon-font.ttf */,
 				BC094066F99F4926B12B5993 /* SimpleLineIcons.ttf */,
 				587048D592FE403AA55DA0E3 /* Zocial.ttf */,
+				E88EB463D02A4624863A175D /* SourceSansPro-Black.otf */,
+				5889CD9FD4FF42F4877E7BDA /* SourceSansPro-BlackIt.otf */,
+				BACC7C1420F84B8F95561173 /* SourceSansPro-Bold.otf */,
+				B52D9DCC0FFA4EFAB4C4FB55 /* SourceSansPro-BoldIt.otf */,
+				C8C18DF70B9442D1BDC14A5D /* SourceSansPro-ExtraLight.otf */,
+				3F0794DC41904665911E3B4A /* SourceSansPro-ExtraLightIt.otf */,
+				7F49D8D9F7BE49259087C38F /* SourceSansPro-It.otf */,
+				C66045E831DC400482D5BDA0 /* SourceSansPro-Light.otf */,
+				A93362A406FF437381E46601 /* SourceSansPro-LightIt.otf */,
+				AC679E586B3443819A82C2B1 /* SourceSansPro-Regular.otf */,
+				E929362038474C78963E1ACB /* SourceSansPro-Semibold.otf */,
+				6A231D799FC04CF69C117FEC /* SourceSansPro-SemiboldIt.otf */,
+				160A3916C97F40D1A08F5F8B /* SourceSansPro-Black.ttf */,
+				794060018AF84A159910F886 /* SourceSansPro-BlackIt.ttf */,
+				FB2FCFC96D764D79B646F402 /* SourceSansPro-Bold.ttf */,
+				BE395180C0AD470E85AFA98E /* SourceSansPro-BoldIt.ttf */,
+				9085E38480DA4F319C271B03 /* SourceSansPro-ExtraLight.ttf */,
+				3A42560E594D4ECD83274E15 /* SourceSansPro-ExtraLightIt.ttf */,
+				376147ECBF9F4BDAA15EEA96 /* SourceSansPro-It.ttf */,
+				8FDF719B1BD4434A8AE56768 /* SourceSansPro-Light.ttf */,
+				9EDD2E8E49C0495EB64801F5 /* SourceSansPro-LightIt.ttf */,
+				89A1C0F68512478EBCF4AEB8 /* SourceSansPro-Regular.ttf */,
+				5D64B87AEF214B2DA5CEEA47 /* SourceSansPro-Semibold.ttf */,
+				4C90CDB40C9F41C8974C0661 /* SourceSansPro-SemiboldIt.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1123,6 +1203,30 @@
 				AE7E028901584E4CBF14BD2E /* rubicon-icon-font.ttf in Resources */,
 				C601AB8D21434C71A4D0EAC5 /* SimpleLineIcons.ttf in Resources */,
 				55A7796614934DEFA0C02619 /* Zocial.ttf in Resources */,
+				5AF81AD7B9FC4180BC3A7B71 /* SourceSansPro-Black.otf in Resources */,
+				25ABF5C3B8594DF5AE8AB02A /* SourceSansPro-BlackIt.otf in Resources */,
+				9415F54DCA90447CA936D5F9 /* SourceSansPro-Bold.otf in Resources */,
+				EC96F06EDED14EA69C396550 /* SourceSansPro-BoldIt.otf in Resources */,
+				64832C293DED42A6AEDDBFB6 /* SourceSansPro-ExtraLight.otf in Resources */,
+				938DF5E3C5CE4147AD4B1993 /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				9C9B0CE840D742E2B75F9180 /* SourceSansPro-It.otf in Resources */,
+				54411D3E90924D41845F8E66 /* SourceSansPro-Light.otf in Resources */,
+				50B1EEE0FA154519A40C2393 /* SourceSansPro-LightIt.otf in Resources */,
+				C201F45E4D6B4D768E1B5B1A /* SourceSansPro-Regular.otf in Resources */,
+				B25179ABC4A64292BCDBA134 /* SourceSansPro-Semibold.otf in Resources */,
+				A181BBD46B3D4C14ABC5E768 /* SourceSansPro-SemiboldIt.otf in Resources */,
+				6EF9433EE452426F8C77052C /* SourceSansPro-Black.ttf in Resources */,
+				7FD9AFABB5254E48BE83DD56 /* SourceSansPro-BlackIt.ttf in Resources */,
+				DD3A0AB0F98D4DFAAF34FD9E /* SourceSansPro-Bold.ttf in Resources */,
+				EA667CC549D8470389D0A275 /* SourceSansPro-BoldIt.ttf in Resources */,
+				CC65337471974E71BCEB8033 /* SourceSansPro-ExtraLight.ttf in Resources */,
+				D33016E3C132486DBB359219 /* SourceSansPro-ExtraLightIt.ttf in Resources */,
+				65FCB42E6BEC402899E3652E /* SourceSansPro-It.ttf in Resources */,
+				68DFF5877F6940998C8EDEA7 /* SourceSansPro-Light.ttf in Resources */,
+				500AE6D4E3C5458F9DE13CCA /* SourceSansPro-LightIt.ttf in Resources */,
+				C120B38F3B4F4EBAAC32E92E /* SourceSansPro-Regular.ttf in Resources */,
+				FC9FC43C6E064EFC9B0ADF77 /* SourceSansPro-Semibold.ttf in Resources */,
+				09D134B1DDA6450DB9CDD4EA /* SourceSansPro-SemiboldIt.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1259,11 +1363,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Debug;
@@ -1287,11 +1394,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Release;
@@ -1316,6 +1426,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Debug;
@@ -1339,6 +1450,7 @@
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Release;
@@ -1370,11 +1482,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Debug;
@@ -1406,11 +1521,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Release;
@@ -1441,11 +1559,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Debug;
@@ -1476,11 +1597,14 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)\..\node_modules\react-native-gesture-handler\ios/**",
 					"$(SRCROOT)\..\node_modules\react-native-linear-gradient\BVLinearGradient",
+					"$(SRCROOT)\..\node_modules\react-native-svg\ios/**",
 				);
 			};
 			name = Release;

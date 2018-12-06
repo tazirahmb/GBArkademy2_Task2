@@ -6,7 +6,7 @@ import {
     Thumbnail,
     View
 } from 'native-base';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 class CardListTwoLines extends Component {
     
@@ -15,9 +15,9 @@ class CardListTwoLines extends Component {
         const { variabelData } = this.props;
 
         return(
-                    <List>
-                        {variabelData.map((data, key) =>
-                        <ListItem Thumbnail>
+                    <List style={{backgroundColor: 'white'}}>
+                        {variabelData.map((data) =>
+                        <ListItem key={data.toString()} Thumbnail>
                             <Thumbnail square source={data.Thumbnail} />
                             <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
                                 <Text>{data.Title}</Text>
@@ -30,8 +30,8 @@ class CardListTwoLines extends Component {
     }
 }
 
-CardListTwoLines.PropTypes = {
-    variabelData: PropTypes.array.isRequired
+CardListTwoLines.propTypes = {
+    variabelData: propTypes.array.isRequired
 }
 
 export default CardListTwoLines;

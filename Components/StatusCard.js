@@ -7,8 +7,9 @@ import {
     Icon,
     Body
 } from 'native-base';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import {Grid, Row, Col} from 'react-native-easy-grid';
+import {Styles, ColorStyles} from '../styles/Styles';
 
 class StatusCard extends Component {
 
@@ -57,15 +58,15 @@ class StatusCard extends Component {
                         <Row>
                             <Text note style={{paddingBottom: 5}}>{Likes} likes • {Comments} Comments</Text>
                         </Row>
-                        <Row style={{borderTopWidth: 1, borderTopColor: '#EEE', justifyContent: 'center'}}>
+                        <Row style={Styles.statusAction}>
                             <Col style={{paddingTop: 5, alignItems: 'center'}}>
-                                <Text style={{color: '#737373'}}><Icon name='grid' style={{fontSize: 20, color: '#737373'}}/> Like</Text>
+                                <Text style={Styles.statusActionText}><Icon name='grid' style={Styles.icon}/> Like</Text>
                             </Col>
                             <Col style={{paddingTop: 5, alignItems: 'center'}}>
-                                <Text style={{color: '#737373'}}><Icon name='grid' style={{fontSize: 20, color: '#737373'}}/> Comment</Text>
+                                <Text style={Styles.statusActionText}><Icon name='grid' style={Styles.icon}/> Comment</Text>
                             </Col>
                             <Col style={{paddingTop: 5, alignItems: 'center'}}>
-                                <Text style={{color: '#737373'}}><Icon name='grid' style={{fontSize: 20, color: '#737373'}}/> Share</Text>
+                                <Text style={Styles.statusActionText}><Icon name='grid' style={Styles.icon}/> Share</Text>
                             </Col>
                         </Row>
                     </Grid>
@@ -75,14 +76,14 @@ class StatusCard extends Component {
     }
 }
 
-StatusCard.PropTypes = {
-    ProfPic: PropTypes.object.isRequired,
-    Name: PropTypes.string.isRequired,
-    Follower: PropTypes.string.isRequired,
-    DatePosted: PropTypes.string.isRequired,
-    StatusContent: PropTypes.string.isRequired,
-    Likes: PropTypes.string,
-    Comments: PropTypes.string
+StatusCard.propTypes = {
+    ProfPic: propTypes.number.isRequired,
+    Name: propTypes.string.isRequired,
+    Follower: propTypes.number.isRequired,
+    DatePosted: propTypes.string.isRequired,
+    StatusContent: propTypes.string.isRequired,
+    Likes: propTypes.number,
+    Comments: propTypes.number
 }
 
 export default StatusCard;

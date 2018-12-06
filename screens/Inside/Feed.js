@@ -13,13 +13,19 @@ import {
 } from 'native-base';
 import StatusCard from '../../Components/StatusCard';
 import {statusFeed} from '../../Components/ArrayData';
+import {Styles, ColorStyles} from '../../styles/Styles';
 
 export default class Feed extends Component {
 
     render() {
         return(
-                <Container>
-                    <Header searchBar noShadow androidStatusBarColor='#016098'>
+                <Container style={Styles.container}>
+                    <Header
+                        searchBar
+                        noShadow
+                        style={Styles.Header}
+                        androidStatusBarColor={ColorStyles.statusBarColor}
+                    >
                         <Left>
                             <Thumbnail small source={require('../../images/splash1.jpg')} />
                         </Left>
@@ -38,8 +44,9 @@ export default class Feed extends Component {
                         </Right>
                     </Header>
                     <Content>
-                        {statusFeed.map((data, key) =>
+                        {statusFeed.map((data) =>
                             <StatusCard
+                                key={data.toString()}
                                 ProfPic={data.ProfPic}
                                 Name={data.Name}
                                 Follower={data.Follower}

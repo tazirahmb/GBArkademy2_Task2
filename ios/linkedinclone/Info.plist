@@ -69,6 +69,30 @@
 		<string>rubicon-icon-font.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>SourceSansPro-Black.otf</string>
+		<string>SourceSansPro-BlackIt.otf</string>
+		<string>SourceSansPro-Bold.otf</string>
+		<string>SourceSansPro-BoldIt.otf</string>
+		<string>SourceSansPro-ExtraLight.otf</string>
+		<string>SourceSansPro-ExtraLightIt.otf</string>
+		<string>SourceSansPro-It.otf</string>
+		<string>SourceSansPro-Light.otf</string>
+		<string>SourceSansPro-LightIt.otf</string>
+		<string>SourceSansPro-Regular.otf</string>
+		<string>SourceSansPro-Semibold.otf</string>
+		<string>SourceSansPro-SemiboldIt.otf</string>
+		<string>SourceSansPro-Black.ttf</string>
+		<string>SourceSansPro-BlackIt.ttf</string>
+		<string>SourceSansPro-Bold.ttf</string>
+		<string>SourceSansPro-BoldIt.ttf</string>
+		<string>SourceSansPro-ExtraLight.ttf</string>
+		<string>SourceSansPro-ExtraLightIt.ttf</string>
+		<string>SourceSansPro-It.ttf</string>
+		<string>SourceSansPro-Light.ttf</string>
+		<string>SourceSansPro-LightIt.ttf</string>
+		<string>SourceSansPro-Regular.ttf</string>
+		<string>SourceSansPro-Semibold.ttf</string>
+		<string>SourceSansPro-SemiboldIt.ttf</string>
 	</array>
 </dict>
 </plist>

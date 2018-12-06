@@ -19,8 +19,8 @@ export default class SplashScreen extends Component {
 
   render() {
     return (
-      <Container style={Styles.container}>
-        <Header noShadow style={Styles.Header} androidStatusBarColor={ColorStyles.statusBarColor}>
+      <Container style={[Styles.container, Styles.splashContainer]}>
+        <Header noShadow style={[Styles.Header, Styles.splashHeader]} androidStatusBarColor={ColorStyles.statusBarColor} >
           <Image
             style={Styles.logo}
             source={require('../images/logo.png')}
@@ -38,9 +38,9 @@ export default class SplashScreen extends Component {
               indicatorSpace={15}
               animate={false}
             >
-            {splashComponent.map((data, key) => 
-              <Col style={Styles.carouselChild}>
-                <Text style={{color: ColorStyles.white, textAlign:'center'}}>{data.text}</Text>
+            {splashComponent.map((data) => 
+              <Col key={data.toString()} style={Styles.carouselChild}>
+                <Text style={{color: 'white', textAlign:'center'}}>{data.text}</Text>
                 <Image source={data.Image}/>
               </Col>
             )}
@@ -50,7 +50,7 @@ export default class SplashScreen extends Component {
           <Row size={1}>
             <Col style={Styles.tombolTombol}>
               <Button iconLeft block light onPress={() => this.props.navigation.navigate('TabScreen')}>
-                <Icon style={{color: ColorStyles.lightBlue}} name='logo-google' />
+                <Image source={require('../images/googlelogo.png')} style={{maxWidth: 24, maxHeight: 24}} />
                 <Text style={[Styles.buttonText, {color: ColorStyles.lightBlue}]}>JOIN WITH GOOGLE</Text>
               </Button>
               <Button block bordered light onPress={() => this.props.navigation.navigate('TabScreen')}>

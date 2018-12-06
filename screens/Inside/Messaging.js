@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import {
-    Text,
-    View,
-    ListItem,
     Header,
     Title,
     Left,
@@ -10,30 +7,32 @@ import {
     Input,
     Icon,
     Right,
-    Body,
     Content,
-    Container,
-    List,
-    Thumbnail} from 'native-base';
+    Container
+} from 'native-base';
 import { Messages } from '../../Components/ArrayData';
 import ListTwoLines from '../../Components/ListTwoLines';
+import {Styles, ColorStyles} from '../../styles/Styles';
 
 export default class Messaging extends Component {
     render() {
         return(
-            <Container>
-                <Header>
+            <Container style={Styles.container}>
+                <Header noShadow style={Styles.Header}>
                     <Left>
                         <Title>Messaging</Title>
                     </Left>
                     <Right/>
                 </Header>
                 <Content>
-                    <Header searchBar noShadow>
+                    <Header
+                        searchBar
+                        noShadow
+                        style={Styles.messagingSearchBar} androidStatusBarColor={ColorStyles.statusBarColor}>
                         <Item>
                             <Icon name='search'/>
                             <Input placeholder='Search message' />
-                            <Icon name='setting'/>
+                            <Icon name='more'/>
                         </Item>
                     </Header>
                     <ListTwoLines

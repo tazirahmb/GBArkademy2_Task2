@@ -159,6 +159,14 @@ const friendRecommendation = [
     },
 ]
 
+const notification = [
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Text: 'Kami mungkin menemukan pekerjaan yang anda minati di PT. Arkademy',
+        Button: 'LIHAT PEKERJAAN'
+    },
+]
+
 const splashComponent = [
     {text: 'Share your professional profile', Image: require('../images/splash1.jpg')},
     {text: 'Build relationships to unlock opportunity', Image: require('../images/splash2.jpg')},
@@ -173,5 +181,6 @@ export {
     Experience,
     Contact,
     Messages,
-    friendRecommendation
+    friendRecommendation,
+    notification
 };

@@ -5,7 +5,8 @@ import {
     Thumbnail
 } from 'native-base';
 import {Col} from 'react-native-easy-grid';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
+import {Styles, ColorStyles} from '../styles/Styles';
 
 class FriendCardList extends Component {
     
@@ -14,7 +15,7 @@ class FriendCardList extends Component {
         const { thumbnail, Name, Title } = this.props;
 
         return(
-            <Col style={{width: 177.5, borderWidth: 0.5, borderColor: '#AAA', alignItems: 'center', justifyContent:'center', paddingVertical: 16}}>
+            <Col style={Styles.friendCard}>
                 <Thumbnail source={thumbnail} />
                 <Text style={{fontWeight: 'bold'}}>{Name}</Text>
                 <Text note numberOfLines={2} style={{textAlign: "center"}}>{Title}</Text>
@@ -28,10 +29,10 @@ class FriendCardList extends Component {
 
 //cek error di file ini
 
-FriendCardList.PropTypes = {
-    Thumbnail: PropTypes.object.isRequired,
-    Name: PropTypes.string.isRequired,
-    Title: PropTypes.string.isRequired
+FriendCardList.propTypes = {
+    Thumbnail: propTypes.number,
+    Name: propTypes.string.isRequired,
+    Title: propTypes.string.isRequired
 }
 
 export default FriendCardList;
