@@ -67,37 +67,22 @@ export default class Profile extends Component {
                         <Text note style={{color: 'white', fontSize: 12}}>Private to you</Text>
                         <Card style={{padding: 10}}>
                             <Grid>
-                                <Col>
-                                    <Left>
-                                    <Row>
+                                <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
+                                    
                                         <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
-                                    </Row>
-                                    <Row>
                                         <Text note style={{color: '#000'}}>Who viewed your profile</Text>
-                                    </Row>
-                                    </Left>
+                                    
                                 </Col>
-                                <Col>
-                                    <Left>
+                                <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
                                         
-                                    <Row>
                                         <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
-                                    </Row>
-                                    <Row style={{alignItems: "flex-start"}}>
                                         <Text note style={{color: '#000'}}>Post views</Text>
-                                    </Row>
-                                    </Left>
+                                    
                                 </Col>
-                                <Col>
-                                    <Left>
-
-                                    <Row>
+                                <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
                                         <H2 style={{color: ColorStyles.lightBlue, fontWeight: 'bold'}}>0</H2>
-                                    </Row>
-                                    <Row>
                                         <Text note style={{color: '#000'}}>Search Appearance</Text>
-                                    </Row>
-                                    </Left>
+                                    
                                 </Col>
                             </Grid>
                         </Card>

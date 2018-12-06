@@ -16,6 +16,9 @@ import {
     CardItem,
     Card} from 'native-base';
 import {Grid, Row, Col} from 'react-native-easy-grid';
+import {ColorStyles} from '../../styles/Styles';
+import FriendCardList from '../../Components/FriendCardList';
+import {friendRecommendation} from '../../Components/ArrayData';
 
 export default class Friends extends Component {
     render() {
@@ -37,103 +40,52 @@ export default class Friends extends Component {
                     <Content>
                         <Card>
                             <CardItem>
-                                <Left>
-                                    <Text>103</Text>
-                                    <Text>View Connection</Text>
-                                </Left>
-                                <Body>
-                                    <Icon name='search'/>
-                                    <Text>Find nearby (OFF)</Text>
-                                </Body>
-                                <Right>
-                                    <Icon name='contact'/>
-                                    <Text>Add contacts</Text>
-                                </Right>
+                                <Grid>
+                                    <Col style={{alignItems: 'center', justifyContent:'center'}}>
+                                        <Text>103</Text>
+                                        <Text note style={{fontSize: 12}}>View Connection</Text>
+                                    </Col>
+                                    <Col style={{alignItems: 'center', justifyContent:'center'}}>
+                                        <Icon name='search'/>
+                                        <Text note style={{fontSize: 12}}>Find nearby (OFF)</Text>
+                                    </Col>
+                                    <Col style={{alignItems: 'center', justifyContent:'center'}}>
+                                        <Icon name='contact'/>
+                                        <Text note style={{fontSize: 12}}>Add contacts</Text>
+                                    </Col>
+                                </Grid>
                             </CardItem>
                         </Card>
 
                         <Card>
                             <CardItem>
-                                <Left>
+                                <Body>
                                     <Text>No pending invitation</Text>
-                                </Left>
+                                </Body>
                                 <Right>
-                                    <Text>MANAGE ALL</Text>
+                                    <Text style={{color: ColorStyles.lightBlue}}>MANAGE ALL</Text>
                                 </Right>
                             </CardItem>
                         </Card>
 
+                        <Card>
+
                         <Grid style={{backgroundColor: 'white'}}>
                             <Row>
-                                <Text>People yo may know</Text>
+                                <Text style={{margin: 8}}>People you may know</Text>
                             </Row>
-                            <Row>
-                                <Col style={{borderWidth: 0.5, borderColor: '#AAA', justifyContent:'center', alignContent: 'center'}}>
-                                    <View style={{marginBottom: 20}}>  
-                                        <Thumbnail source={require('../../images//profpic.jpg')} />
-                                        <Text style={{fontWeight: 'bold'}}>Astrarry Nugroho</Text>
-                                        <Text note numberOfLines={2}>Customer Service Agents, Export at Maersk Line</Text>
-                                    </View>
-                                    <Button bordered>
-                                        <Text>CONNECT</Text>
-                                    </Button>
-                                </Col>
-                                <Col style={{borderWidth: 0.5, borderColor: '#AAA'}}>
-                                      
-                                        <Thumbnail source={require('../../images//profpic.jpg')} />
-                                        <Text style={{fontWeight: 'bold'}}>Astrarry Nugroho</Text>
-                                        <Text note numberOfLines={2}>Customer Service Agents, Export at Maersk Line</Text>
-                                    
-                                    <Button bordered style={{margin: 10}}>
-                                        <Text>CONNECT</Text>
-                                    </Button>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col style={{borderWidth: 0.5, borderColor: '#AAA', justifyContent:'center', alignContent: 'center'}}>
-                                    <View style={{marginBottom: 20}}>  
-                                        <Thumbnail source={require('../../images//profpic.jpg')} />
-                                        <Text style={{fontWeight: 'bold'}}>Astrarry Nugroho</Text>
-                                        <Text note numberOfLines={2}>Customer Service Agents, Export at Maersk Line</Text>
-                                    </View>
-                                    <Button bordered>
-                                        <Text>CONNECT</Text>
-                                    </Button>
-                                </Col>
-                                <Col style={{borderWidth: 0.5, borderColor: '#AAA'}}>
-                                      
-                                        <Thumbnail source={require('../../images//profpic.jpg')} />
-                                        <Text style={{fontWeight: 'bold'}}>Astrarry Nugroho</Text>
-                                        <Text note numberOfLines={2}>Customer Service Agents, Export at Maersk Line</Text>
-                                    
-                                    <Button bordered style={{margin: 10}}>
-                                        <Text>CONNECT</Text>
-                                    </Button>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col style={{borderWidth: 0.5, borderColor: '#AAA', justifyContent:'center', alignContent: 'center'}}>
-                                    <View style={{marginBottom: 20}}>  
-                                        <Thumbnail source={require('../../images//profpic.jpg')} />
-                                        <Text style={{fontWeight: 'bold'}}>Astrarry Nugroho</Text>
-                                        <Text note numberOfLines={2}>Customer Service Agents, Export at Maersk Line</Text>
-                                    </View>
-                                    <Button bordered>
-                                        <Text>CONNECT</Text>
-                                    </Button>
-                                </Col>
-                                <Col style={{borderWidth: 0.5, borderColor: '#AAA'}}>
-                                      
-                                        <Thumbnail source={require('../../images//profpic.jpg')} />
-                                        <Text style={{fontWeight: 'bold'}}>Astrarry Nugroho</Text>
-                                        <Text note numberOfLines={2}>Customer Service Agents, Export at Maersk Line</Text>
-                                    
-                                    <Button bordered style={{margin: 10}}>
-                                        <Text>CONNECT</Text>
-                                    </Button>
-                                </Col>
+                            <Row style={{flexWrap: 'wrap'}}>
+                                {friendRecommendation.map((data) =>
+                                    <FriendCardList
+                                        key={data.toString()}
+                                        thumbnail={data.Thumbnail}
+                                        Name={data.Name}
+                                        Title={data.Title}
+                                    />    
+                                )}
                             </Row>
                         </Grid>
+                        </Card>
                     </Content>
                     </Container>
         )

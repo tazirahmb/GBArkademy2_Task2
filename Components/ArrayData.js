@@ -102,6 +102,63 @@ const Messages = [
     },
 ]
 
+const friendRecommendation = [
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+    {
+        Thumbnail: require('../images/profpic.jpg'),
+        Name: 'Rizka Aristiyanti',
+        Title: 'Product Executive at EMC Group'
+
+    },
+]
+
 const splashComponent = [
     {text: 'Share your professional profile', Image: require('../images/splash1.jpg')},
     {text: 'Build relationships to unlock opportunity', Image: require('../images/splash2.jpg')},
@@ -115,5 +172,6 @@ export {
     Education,
     Experience,
     Contact,
-    Messages
+    Messages,
+    friendRecommendation
 };
