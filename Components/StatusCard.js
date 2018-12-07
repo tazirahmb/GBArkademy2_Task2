@@ -60,13 +60,13 @@ class StatusCard extends Component {
                         </Row>
                         <Row style={Styles.statusAction}>
                             <Col style={{paddingTop: 5, alignItems: 'center'}}>
-                                <Text style={Styles.statusActionText}><Icon name='grid' style={Styles.icon}/> Like</Text>
+                                <Text style={Styles.statusActionText}><Icon name='ios-thumbs-up' style={Styles.icon}/> Like</Text>
                             </Col>
                             <Col style={{paddingTop: 5, alignItems: 'center'}}>
-                                <Text style={Styles.statusActionText}><Icon name='grid' style={Styles.icon}/> Comment</Text>
+                                <Text style={Styles.statusActionText}><Icon name='ios-chatbubbles' style={Styles.icon}/> Comment</Text>
                             </Col>
                             <Col style={{paddingTop: 5, alignItems: 'center'}}>
-                                <Text style={Styles.statusActionText}><Icon name='grid' style={Styles.icon}/> Share</Text>
+                                <Text style={Styles.statusActionText}><Icon name='share' style={Styles.icon}/> Share</Text>
                             </Col>
                         </Row>
                     </Grid>

@@ -11,7 +11,6 @@ const ColorStyles = {
 
 const Styles = StyleSheet.create({
       container: {
-        fontFamily: "SourceSansPro",
         backgroundColor: ColorStyles.background
       },
       LinkText: {
@@ -19,10 +18,6 @@ const Styles = StyleSheet.create({
       },
       splashContainer: {
         backgroundColor: ColorStyles.splashBackground
-      },
-      Header: {
-        backgroundColor: ColorStyles.lightBlue,
-        height: 45
       },
       messagingSearchBar: {
         backgroundColor: 'white',
@@ -63,13 +58,14 @@ const Styles = StyleSheet.create({
       
       profilePicture: {
         alignSelf: 'center',
-                            elevation: 3,
-                            scaleX: 1.5,
-                            scaleY: 1.5,
-                            top: 48,
-                            position: 'absolute',
-                            borderWidth: 3,
-                            borderColor: 'white',
+        transform: ([{
+          scale: 1.5
+        }]),
+        top: 48,
+        position: 'absolute',
+        borderWidth: 3,
+        borderColor: 'white',
+        elevation: 3
       },
 
       dashboardContainer: {
@@ -106,6 +102,15 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent:'center',
         paddingVertical: 16
+      },
+
+      Searchbar: {
+        backgroundColor: 'white',
+                            opacity: 0.75,
+                            width: 200,
+                            marginVertical: 6,
+                            elevation: 4,
+                            borderRadius: 3
       }
 })
 

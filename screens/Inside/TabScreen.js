@@ -34,7 +34,9 @@ const TabScreen = createBottomTabNavigator({
     }),
     tabBarOptions: {
       activeTintColor: ColorStyles.lightBlue,
-      inactiveTintColor: ColorStyles.background,
+      inactiveTintColor: ColorStyles.noteColor,
+      showLabel: false,
+      showIcon: true
     },
   });
 

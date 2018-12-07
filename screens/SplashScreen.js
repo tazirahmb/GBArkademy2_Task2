@@ -19,8 +19,8 @@ export default class SplashScreen extends Component {
 
   render() {
     return (
-      <Container style={[Styles.container, Styles.splashContainer]}>
-        <Header noShadow style={[Styles.Header, Styles.splashHeader]} androidStatusBarColor={ColorStyles.statusBarColor} >
+      <Container style={Styles.splashContainer}>
+        <Header noShadow style={Styles.splashHeader}>
           <Image
             style={Styles.logo}
             source={require('../images/logo.png')}
@@ -49,7 +49,7 @@ export default class SplashScreen extends Component {
           </Row>
           <Row size={1}>
             <Col style={Styles.tombolTombol}>
-              <Button iconLeft block light onPress={() => this.props.navigation.navigate('TabScreen')}>
+              <Button iconLeft block light onPress={() => this.props.navigation.navigate('TabScreen')} style={{elevation: 0}}>
                 <Image source={require('../images/googlelogo.png')} style={{maxWidth: 24, maxHeight: 24}} />
                 <Text style={[Styles.buttonText, {color: ColorStyles.lightBlue}]}>JOIN WITH GOOGLE</Text>
               </Button>

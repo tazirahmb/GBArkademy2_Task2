@@ -20,26 +20,23 @@ export default class Feed extends Component {
     render() {
         return(
                 <Container style={Styles.container}>
-                    <Header
-                        searchBar
-                        noShadow
-                        style={Styles.Header}
-                        androidStatusBarColor={ColorStyles.statusBarColor}
-                    >
+                    <Header noShadow>
                         <Left>
-                            <Thumbnail small source={require('../../images/splash1.jpg')} />
+                            <Thumbnail small source={require('../../images/ProfPic/profpic.png')} />
                         </Left>
-                        <Item>
-                            <Icon name="ios-search" />
+
+                        <Item style={Styles.Searchbar}>
+                            <Icon style={{marginLeft: 4}} name="ios-search" />
                             <Input placeholder="Search" />
                             <Icon name="ios-people" />
                         </Item>
+
                         <Right>
                             <Button transparent>
-                                <Icon name='list'/>
+                                <Icon name='ios-list'/>
                             </Button>
                             <Button transparent>
-                                <Icon name='grid'/>
+                                <Icon name='ios-grid'/>
                             </Button>
                         </Right>
                     </Header>

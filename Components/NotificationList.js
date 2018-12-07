@@ -25,8 +25,8 @@ class NotificationList extends Component {
                 </Left>
                 <Body style={{marginHorizontal: 8}}>
                     <Text>{Content}</Text>
-                    <Button bordered style={{marginVertical: 16, borderColor: ColorStyles.lightBlue}}>
-                        <Text style={{color: ColorStyles.lightBlue}}>{ButtonText}</Text>
+                    <Button bordered style={{marginVertical: 16}}>
+                        <Text>{ButtonText}</Text>
                     </Button>
                 </Body>
                 <Right style={{justifyContent: 'flex-start'}}>

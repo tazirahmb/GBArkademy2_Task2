@@ -7,6 +7,7 @@ import {
     Right,
     Icon,
     Input,
+    Button,
     List,
     Thumbnail,
     Item,
@@ -19,22 +20,21 @@ export default class Notifikasi extends Component {
     render() {
         return(
             <Container style={Styles.container}>
-                <Header
-                    searchBar
-                    noShadow
-                    style={Styles.Header}
-                    androidStatusBarColor={ColorStyles.statusBarColor}
-                >
+                <Header noShadow>
                     <Left>
-                        <Thumbnail small source={require('../../images/splash1.jpg')} />
+                        <Thumbnail small source={require('../../images/ProfPic/profpic.png')} />
                     </Left>
-                    <Item>
-                        <Icon name="ios-search" />
-                        <Input placeholder="Search" />
-                        <Icon name="ios-people" />
-                    </Item>
+
+                    <Item style={Styles.Searchbar}>
+                            <Icon style={{marginLeft: 4}} name="ios-search" />
+                            <Input placeholder="Search" />
+                            <Icon name="ios-people" />
+                        </Item>
+                        
                     <Right>
-                        <Icon name='grid'/>
+                        <Button transparent>
+                            <Icon name='ios-grid' />
+                        </Button>
                     </Right>
                 </Header>
                 <Content>

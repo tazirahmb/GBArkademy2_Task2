@@ -17,7 +17,7 @@ class FriendCardList extends Component {
         return(
             <Col style={Styles.friendCard}>
                 <Thumbnail source={thumbnail} />
-                <Text style={{fontWeight: 'bold'}}>{Name}</Text>
+                <Text style={{textAlign: "center", fontWeight: 'bold'}}>{Name}</Text>
                 <Text note numberOfLines={2} style={{textAlign: "center"}}>{Title}</Text>
                 <Button small bordered style={{alignSelf: 'center', marginTop: 40}}>
                     <Text>CONNECT</Text>

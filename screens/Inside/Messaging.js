@@ -18,7 +18,7 @@ export default class Messaging extends Component {
     render() {
         return(
             <Container style={Styles.container}>
-                <Header noShadow style={Styles.Header}>
+                <Header noShadow>
                     <Left>
                         <Title>Messaging</Title>
                     </Left>

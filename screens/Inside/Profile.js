@@ -27,13 +27,9 @@ export default class Profile extends Component {
     render() {
         return(
             <Container style={Styles.container}>
-                <Header
-                    noShadow
-                    style={Styles.Header}
-                    androidStatusBarColor={ColorStyles.statusBarColor}
-                >
+                <Header noShadow>
                     <Left>
-                        <Icon name='person' style={{color: 'white'}}/>
+                        <Icon name='ios-person' style={{color: 'white'}}/>
                     </Left>
                     <Body>
                         <Title>Ta'zirah Marwan</Title>
@@ -56,7 +52,7 @@ export default class Profile extends Component {
                         <Thumbnail
                             large
                             style={Styles.profilePicture}
-                            source={require('../../images/profpic.jpg')} 
+                            source={require('../../images/ProfPic/profpic.png')} 
                         />
                     </View>
                     <View style={Styles.dashboardContainer}>
@@ -66,18 +62,18 @@ export default class Profile extends Component {
                             <Grid>
                                 <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
                                     
-                                        <H2 style={Styles.LinkText}>0</H2>
-                                        <Text note style={{color: 'black'}}>Who viewed your profile</Text>
+                                        <H2 style={Styles.LinkText}>12</H2>
+                                        <Text note style={{color: 'black'}}>viewed your profile</Text>
                                     
                                 </Col>
                                 <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
                                         
-                                        <H2 style={Styles.LinkText}>0</H2>
+                                        <H2 style={Styles.LinkText}>53</H2>
                                         <Text note style={{color: 'black'}}>Post views</Text>
                                     
                                 </Col>
                                 <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
-                                        <H2 style={Styles.LinkText}>0</H2>
+                                        <H2 style={Styles.LinkText}>196</H2>
                                         <Text note style={{color: 'black'}}>Search Appearance</Text>
                                     
                                 </Col>
