@@ -6,7 +6,7 @@ import {
 } from 'native-base';
 import {Col} from 'react-native-easy-grid';
 import propTypes from 'prop-types';
-import {Styles, ColorStyles} from '../styles/Styles';
+import {Styles} from '../styles/Styles';
 
 class FriendCardList extends Component {
     
@@ -26,8 +26,6 @@ class FriendCardList extends Component {
         )
     }
 }
-
-//cek error di file ini
 
 FriendCardList.propTypes = {
     Thumbnail: propTypes.number,

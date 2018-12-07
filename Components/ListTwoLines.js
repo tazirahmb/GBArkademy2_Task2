@@ -15,17 +15,17 @@ class CardListTwoLines extends Component {
         const { variabelData } = this.props;
 
         return(
-                    <List style={{backgroundColor: 'white'}}>
-                        {variabelData.map((data) =>
-                        <ListItem key={data.toString()} Thumbnail>
-                            <Thumbnail square source={data.Thumbnail} />
-                            <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
-                                <Text>{data.Title}</Text>
-                                <Text note>{data.Content}</Text>
-                            </View>
-                        </ListItem>
-                        )}
-                    </List>
+            <List style={{backgroundColor: 'white'}}>
+                {variabelData.map((data) =>
+                    <ListItem key={data.toString()} Thumbnail>
+                        <Thumbnail square source={data.Thumbnail} />
+                        <View  style={{flexDirection: 'column', marginHorizontal: 8}}>
+                            <Text>{data.Title}</Text>
+                            <Text note>{data.Content}</Text>
+                        </View>
+                    </ListItem>
+                )}
+            </List>
         )
     }
 }

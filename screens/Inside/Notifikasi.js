@@ -14,7 +14,7 @@ import {
     } from 'native-base';
 import { notification } from '../../Components/ArrayData';
 import NotificationList from '../../Components/NotificationList';
-import {Styles, ColorStyles} from '../../styles/Styles';
+import {Styles} from '../../styles/Styles';
 
 export default class Notifikasi extends Component {
     render() {
@@ -26,10 +26,10 @@ export default class Notifikasi extends Component {
                     </Left>
 
                     <Item style={Styles.Searchbar}>
-                            <Icon style={{marginLeft: 4}} name="ios-search" />
-                            <Input placeholder="Search" />
-                            <Icon name="ios-people" />
-                        </Item>
+                        <Icon style={{marginLeft: 4}} name="ios-search" />
+                        <Input placeholder="Search" />
+                        <Icon name="ios-people" />
+                    </Item>
                         
                     <Right>
                         <Button transparent>

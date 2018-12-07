@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import {
-  StyleSheet,
   TouchableWithoutFeedback,
-  Image,} from 'react-native';
+  Image
+} from 'react-native';
 import {
   Container,
   Header,
   Text,
-  Button,
-  Icon
+  Button
 } from 'native-base';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import Carousel from 'react-native-carousel';
@@ -66,7 +65,6 @@ export default class SplashScreen extends Component {
             </Col>            
           </Row>
         </Grid>
-        {/* <Footer /> */}
       </Container>
     )
   }

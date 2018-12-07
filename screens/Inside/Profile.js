@@ -16,12 +16,12 @@ import {
     H1,
     H2
 } from 'native-base';
-import {Grid, Row, Col} from 'react-native-easy-grid';
+import {Grid, Col} from 'react-native-easy-grid';
 import {Image} from 'react-native';
 import {Education, Experience, Contact} from '../../Components/ArrayData';
 import CardListThreeLines from '../../Components/CardListThreeLines';
 import CardListTwoLines from '../../Components/CardListTwoLines';
-import {Styles, ColorStyles} from '../../styles/Styles';
+import {Styles} from '../../styles/Styles';
 
 export default class Profile extends Component {
     render() {
@@ -48,9 +48,10 @@ export default class Profile extends Component {
                                     <Text note>South Tangerang, Indonesia • 0 <Icon name='people' style={Styles.icon} /></Text>
                                 </Body>
                             </CardItem>
-                            </Card>
+                        </Card>
                         <Thumbnail
                             large
+                            elevate
                             style={Styles.profilePicture}
                             source={require('../../images/ProfPic/profpic.png')} 
                         />
@@ -60,22 +61,17 @@ export default class Profile extends Component {
                         <Text style={{color: 'white', fontSize: 12}}>Private to you</Text>
                         <Card style={{padding: 10}}>
                             <Grid>
-                                <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
-                                    
-                                        <H2 style={Styles.LinkText}>12</H2>
-                                        <Text note style={{color: 'black'}}>viewed your profile</Text>
-                                    
+                                <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>                        
+                                    <H2 style={Styles.LinkText}>12</H2>
+                                    <Text note style={{color: 'black'}}>viewed your profile</Text>    
+                                </Col>
+                                <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>                                        
+                                    <H2 style={Styles.LinkText}>53</H2>
+                                    <Text note style={{color: 'black'}}>Post views</Text>    
                                 </Col>
                                 <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
-                                        
-                                        <H2 style={Styles.LinkText}>53</H2>
-                                        <Text note style={{color: 'black'}}>Post views</Text>
-                                    
-                                </Col>
-                                <Col style={{alignItems: 'flex-start', justifyContent:'flex-start'}}>
-                                        <H2 style={Styles.LinkText}>196</H2>
-                                        <Text note style={{color: 'black'}}>Search Appearance</Text>
-                                    
+                                    <H2 style={Styles.LinkText}>196</H2>
+                                    <Text note style={{color: 'black'}}>Search Appearance</Text>    
                                 </Col>
                             </Grid>
                         </Card>
@@ -87,7 +83,7 @@ export default class Profile extends Component {
                         variabelData={Experience}
                     />
                     
-                    {/** work */}
+                    {/** Edu */}
                     <CardListThreeLines
                         CategoryName='Education'
                         variabelData={Education}
