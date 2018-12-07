@@ -17,27 +17,32 @@ const TabScreen = createBottomTabNavigator({
   },
   
   {
+    tabBarOptions: {
+      activeTintColor: ColorStyles.lightBlue,
+      inactiveTintColor: ColorStyles.noteColor,
+      showLabel: false
+    },
     defaultNavigationOptions: ({ navigation }) => ({
       tabBarIcon: ({ focused, horizontal, tintColor }) => {
         const { routeName } = navigation.state;
         let iconName;
-        if (routeName === 'Home') {
-          iconName = `ios-information-circle${focused ? '' : '-outline'}`;
-        } else if (routeName === 'Settings') {
-          iconName = `ios-options${focused ? '' : '-outline'}`;
+        if (routeName === 'Feed') {
+          iconName = `ios-home${focused ? '' : '-outline'}`;
+        } else if (routeName === 'Friends') {
+          iconName = `ios-people${focused ? '' : '-outline'}`;
+        } else if (routeName === 'Messaging') {
+          iconName = `ios-chatboxes${focused ? '' : '-outline'}`;
+        } else if (routeName === 'Notifikasi') {
+          iconName = `ios-notifications${focused ? '' : '-outline'}`;
+        } else if (routeName === 'Profile') {
+          iconName = `ios-contact${focused ? '' : '-outline'}`;
         }
 
         // You can return any component that you like here! We usually use an
         // icon component from react-native-vector-icons
-        return <Icon name={iconName} size={horizontal ? 20 : 25} color={tintColor} />;
+        return <Icon name={iconName} size={horizontal ? 20 : 25} style={{color: tintColor}} />;
       },
     }),
-    tabBarOptions: {
-      activeTintColor: ColorStyles.lightBlue,
-      inactiveTintColor: ColorStyles.noteColor,
-      showLabel: false,
-      showIcon: true
-    },
   });
 
 export default createAppContainer(TabScreen);
