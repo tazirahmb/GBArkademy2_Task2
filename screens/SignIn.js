@@ -27,7 +27,7 @@ export default class SignIn extends Component{
                         </Item>
                         <Item floatingLabel style={{marginVertical: 8}}>
                             <Label style={{color: 'white'}}>Password</Label>
-                            <Input style={{color: 'white'}} />
+                            <Input secureTextEntry={true} style={{color: 'white'}} />
                         </Item>
                         <Button light bordered block last style={{marginTop: 24, marginBottom: 16}} onPress={() => this.props.navigation.navigate('TabScreen')}>
                             <Text>SIGN IN</Text>
