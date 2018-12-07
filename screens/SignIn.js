@@ -21,11 +21,11 @@ export default class SignIn extends Component{
                     style={{flex:1}}
                 >
                     <View style={{margin: 10}}>
-                        <Item floatingLabel>
+                        <Item floatingLabel style={{marginVertical: 8}}>
                             <Label style={{color: 'white'}}>Email or Phone</Label>
                             <Input style={{color: 'white'}}/>
                         </Item>
-                        <Item floatingLabel>
+                        <Item floatingLabel style={{marginVertical: 8}}>
                             <Label style={{color: 'white'}}>Password</Label>
                             <Input style={{color: 'white'}} />
                         </Item>
